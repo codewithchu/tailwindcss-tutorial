@@ -2,6 +2,27 @@
 
 Source files for tailwindcss Tutorial Series on [CodeWithChu](https://www.youtube.com/channel/UCSyosm-WcUPT4LnUIIdqSCw 'Subscribe to CodeWithChu Youtube Channel') YouTube Channel.
 
+Each branch are source files for each video.
+
+To get started, clone the project and install the dependencies:
+
+```
+# Using npm
+npm install
+```
+
+Build Tailwindcss Script
+
+```
+npm run build-tw
+```
+
+Watch Tailwindcss Script
+
+```
+npm run watch-tw
+```
+
 ## @codewithchu
 
 [YouTube](https://www.youtube.com/channel/UCSyosm-WcUPT4LnUIIdqSCw 'CodeWithChu Youtube Channel')

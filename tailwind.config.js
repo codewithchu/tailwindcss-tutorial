@@ -5,11 +5,7 @@ module.exports = {
     },
     purge: [],
     theme: {
-        extend: {
-            colors: {
-                'cwc-color': 'transparent',
-            },
-        },
+        extend: {},
     },
     variants: {},
     plugins: [],
