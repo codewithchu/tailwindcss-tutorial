@@ -8,8 +8,8 @@
     </head>
     <body>
         <header class="bg-black text-white w-full">
-            <nav id="mainNav" class="px-8 py-2">
-                <div>
+            <nav id="mainNav" class="px-8 py-2 flex flex-wrap justify-between items-center">
+                <div class="flex justify-between items-center w-full">
                     <h1>
                         <a href="#">
                             <span class="hidden">Boom</span>
@@ -25,12 +25,12 @@
                             </svg>
                         </a>
                     </h1>
-                    <a href="#">
+                    <a href="#" class="">
                         <span class="hidden">mobile menu</span>
-                        <svg class="h-4" xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24">
+                        <svg class="h-8" xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24">
                             <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
                         </svg>
-                        <svg class="h-4" xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24">
+                        <svg class="h-8 hidden" xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24">
                             <path
                                 fill="currentColor"
                                 d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"
@@ -38,7 +38,7 @@
                         </svg>
                     </a>
                 </div>
-                <ul class="hidden uppercase">
+                <ul id="mainMenu" class="hidden uppercase py-6 text-2xl">
                     <li><a href="#">Headphone</a></li>
                     <li><a href="#">Pods</a></li>
                     <li><a href="#">Support</a></li>
@@ -47,11 +47,11 @@
         </header>
         <main>
             <!--Landing page Full Product Hero-->
-            <section class="relative">
+            <section class="relative h-screen-2/3 flex flex-col justify-end">
                 <!--Hero Image-->
-                <div class="absolute">
-                    <span></span>
-                    <img src="./img/boom-hero.jpg" alt="headphone hero" />
+                <div class="cwc-full absolute">
+                    <span class="cwc-full absolute bg-black bg-opacity-25 bg-gradient-to-b from-transparent via-transparent to-black"></span>
+                    <img class="cwc-full object-cover" src="./img/boom-hero.jpg" alt="headphone hero" />
                 </div>
                 <!--Hero Copy-->
                 <div class="relative text-white p-12">
@@ -76,8 +76,8 @@
                         <h2 class="text-lg text-red-600 uppercase">Headphone Pro</h2>
                         <h3 class="text-2xl leading-none mb-2">Music to your ears</h3>
                         <p class="mb-10">Listen in style! Your everyday headphone in many assorted colours.</p>
-                        <div>
-                            <a class="btn bg-white text-black border-white mr-2" href="#">Learn More</a>
+                        <div class="flex justify-center">
+                            <a class="btn bg-white text-black border-gray-200 mr-2" href="#">Learn More</a>
                             <a class="btn bg-red-600 text-white border-red-600" href="#">Shop Now</a>
                         </div>
                     </div>
@@ -94,8 +94,8 @@
                         <h2 class="text-lg text-red-600 uppercase">Pods Pro</h2>
                         <h3 class="text-2xl leading-none mb-2">BOOM comes in small package</h3>
                         <p class="mb-10">Go anywhere and everywhere with your Pods. Listen all day long without worry.</p>
-                        <div>
-                            <a class="btn bg-white text-black border-white mr-2" href="#">Learn More</a>
+                        <div class="flex justify-center">
+                            <a class="btn bg-white text-black border-gray-200 mr-2" href="#">Learn More</a>
                             <a class="btn bg-red-600 text-white border-red-600" href="#">Shop Now</a>
                         </div>
                     </div>

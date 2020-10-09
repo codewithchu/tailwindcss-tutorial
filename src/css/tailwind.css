@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.cwc-full {
+    @apply w-full h-full;
+}
+
 h1,
 h2,
 h3,
@@ -18,4 +22,9 @@ a {
 /*Components*/
 .btn {
     @apply uppercase text-sm px-4 py-2 rounded-full border;
+}
+
+/*Header Nav*/
+#mainMenu li a {
+    @apply py-4 mr-4;
 }

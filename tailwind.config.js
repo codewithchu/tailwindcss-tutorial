@@ -14,6 +14,21 @@ module.exports = {
                 '2xs': '0.7rem',
                 xs: '0.8rem',
             },
+
+            height: (theme) => ({
+                'screen-1/3': '33vh',
+                'screen-1/2': '50vh',
+                'screen-2/3': '66vh',
+                'screen-3/4': '75vh',
+                'screen-4/5': '80vh',
+            }),
+            minHeight: {
+                'screen-1/3': '33vh',
+                'screen-1/2': '50vh',
+                'screen-2/3': '66vh',
+                'screen-3/4': '75vh',
+                'screen-4/5': '80vh',
+            },
         },
     },
     variants: {},
