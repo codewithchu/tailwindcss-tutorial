@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-extra-condensed font-bold;
+}
+a {
+    @apply font-extra-condensed tracking-wider;
+}
+/*Components*/
+.btn {
+    @apply uppercase text-sm;
+}
