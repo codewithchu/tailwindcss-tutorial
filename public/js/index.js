@@ -2,6 +2,7 @@ const nav = document.querySelector('#mainNav');
 const mobileMenu = document.querySelector('#mobileMenu');
 const mobileMenuIcons = mobileMenu.querySelectorAll('svg');
 const mainMenu = document.querySelector('#mainMenu');
+const back2Top = document.querySelector('#back2Top');
 
 //functions
 function toggleBurger() {
@@ -24,4 +25,9 @@ mobileMenu.addEventListener('click', (e) => {
     }
 
     toggleBurger();
+});
+
+back2Top.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scroll({ top: 0, left: 0, behavior: 'smooth' });
 });
