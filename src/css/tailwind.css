@@ -28,3 +28,8 @@ a {
 #mainMenu li a {
     @apply py-4 mr-4;
 }
+
+/*footer*/
+footer ul li h4 {
+    @apply text-2xl mb-2 leading-none;
+}

@@ -6,6 +6,11 @@ module.exports = {
     purge: [],
     theme: {
         extend: {
+            colors: {
+                boom: {
+                    100: '#C0C1C3',
+                },
+            },
             fontFamily: {
                 'extra-condensed': ['Saira Extra Condensed', 'sans-serif'],
             },
