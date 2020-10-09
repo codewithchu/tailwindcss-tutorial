@@ -3557,6 +3557,14 @@ video {
   background-image: linear-gradient(to top left, var(--gradient-color-stops));
 }
 
+.bg-gradient-white\/black{
+  background-image: linear-gradient(to bottom, white 50%, black 50%);
+}
+
+.bg-gradient-red\/white{
+  background-image: linear-gradient(to bottom, #e53e3e 50%, white 50%);
+}
+
 .from-transparent{
   --gradient-from-color: transparent;
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -7677,6 +7685,10 @@ video {
 
 .bg-contain{
   background-size: contain;
+}
+
+.bg-100-200{
+  background-size: 110% 220%;
 }
 
 .border-collapse{
@@ -21426,6 +21438,48 @@ video {
           animation: bounce 1s infinite;
 }
 
+/*utilities*/
+
+.cwc-transition {
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.cwc-scale {
+  --transform-translate-x: 0;
+  --transform-translate-y: 0;
+  --transform-rotate: 0;
+  --transform-skew-x: 0;
+  --transform-skew-y: 0;
+  --transform-scale-x: 1;
+  --transform-scale-y: 1;
+  transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+  --transform-scale-x: 1.05;
+  --transform-scale-y: 1.05;
+}
+
+.cwc-scale:hover {
+  --transform-scale-x: 1;
+  --transform-scale-y: 1;
+}
+
+.cwc-scale-up {
+  --transform-translate-x: 0;
+  --transform-translate-y: 0;
+  --transform-rotate: 0;
+  --transform-skew-x: 0;
+  --transform-skew-y: 0;
+  --transform-scale-x: 1;
+  --transform-scale-y: 1;
+  transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+}
+
+.cwc-scale-up:hover {
+  --transform-scale-x: 1.25;
+  --transform-scale-y: 1.25;
+}
+
 .cwc-full {
   width: 100%;
   height: 100%;
@@ -21444,6 +21498,15 @@ h6 {
 a {
   font-family: Saira Extra Condensed, sans-serif;
   letter-spacing: 0.05em;
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+a:hover {
+  --text-opacity: 1;
+  color: #e53e3e;
+  color: rgba(229, 62, 62, var(--text-opacity));
 }
 
 /*Components*/
@@ -21457,6 +21520,15 @@ a {
   padding-bottom: 0.5rem;
   border-radius: 9999px;
   border-width: 1px;
+  background-size: 110% 220%;
+  background-repeat: no-repeat;
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.btn:hover {
+  background-position: bottom;
 }
 
 @media (min-width: 640px) {
@@ -24487,6 +24559,14 @@ footer ul li h4 {
 
   .sm\:bg-gradient-to-tl{
     background-image: linear-gradient(to top left, var(--gradient-color-stops));
+  }
+
+  .sm\:bg-gradient-white\/black{
+    background-image: linear-gradient(to bottom, white 50%, black 50%);
+  }
+
+  .sm\:bg-gradient-red\/white{
+    background-image: linear-gradient(to bottom, #e53e3e 50%, white 50%);
   }
 
   .sm\:from-transparent{
@@ -28609,6 +28689,10 @@ footer ul li h4 {
 
   .sm\:bg-contain{
     background-size: contain;
+  }
+
+  .sm\:bg-100-200{
+    background-size: 110% 220%;
   }
 
   .sm\:border-collapse{
@@ -45263,6 +45347,14 @@ footer ul li h4 {
     background-image: linear-gradient(to top left, var(--gradient-color-stops));
   }
 
+  .md\:bg-gradient-white\/black{
+    background-image: linear-gradient(to bottom, white 50%, black 50%);
+  }
+
+  .md\:bg-gradient-red\/white{
+    background-image: linear-gradient(to bottom, #e53e3e 50%, white 50%);
+  }
+
   .md\:from-transparent{
     --gradient-from-color: transparent;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -49383,6 +49475,10 @@ footer ul li h4 {
 
   .md\:bg-contain{
     background-size: contain;
+  }
+
+  .md\:bg-100-200{
+    background-size: 110% 220%;
   }
 
   .md\:border-collapse{
@@ -66037,6 +66133,14 @@ footer ul li h4 {
     background-image: linear-gradient(to top left, var(--gradient-color-stops));
   }
 
+  .lg\:bg-gradient-white\/black{
+    background-image: linear-gradient(to bottom, white 50%, black 50%);
+  }
+
+  .lg\:bg-gradient-red\/white{
+    background-image: linear-gradient(to bottom, #e53e3e 50%, white 50%);
+  }
+
   .lg\:from-transparent{
     --gradient-from-color: transparent;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -70157,6 +70261,10 @@ footer ul li h4 {
 
   .lg\:bg-contain{
     background-size: contain;
+  }
+
+  .lg\:bg-100-200{
+    background-size: 110% 220%;
   }
 
   .lg\:border-collapse{
@@ -86811,6 +86919,14 @@ footer ul li h4 {
     background-image: linear-gradient(to top left, var(--gradient-color-stops));
   }
 
+  .xl\:bg-gradient-white\/black{
+    background-image: linear-gradient(to bottom, white 50%, black 50%);
+  }
+
+  .xl\:bg-gradient-red\/white{
+    background-image: linear-gradient(to bottom, #e53e3e 50%, white 50%);
+  }
+
   .xl\:from-transparent{
     --gradient-from-color: transparent;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -90931,6 +91047,10 @@ footer ul li h4 {
 
   .xl\:bg-contain{
     background-size: contain;
+  }
+
+  .xl\:bg-100-200{
+    background-size: 110% 220%;
   }
 
   .xl\:border-collapse{

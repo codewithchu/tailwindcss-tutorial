@@ -34,6 +34,14 @@ module.exports = {
                 'screen-3/4': '75vh',
                 'screen-4/5': '80vh',
             },
+            backgroundSize: {
+                '100-200': '110% 220%',
+            },
+            backgroundImage: {
+                none: 'none',
+                'gradient-white/black': 'linear-gradient(to bottom, white 50%, black 50%)',
+                'gradient-red/white': 'linear-gradient(to bottom, #e53e3e 50%, white 50%)',
+            },
         },
     },
     variants: {},

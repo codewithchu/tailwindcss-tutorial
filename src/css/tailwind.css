@@ -4,6 +4,24 @@
 @tailwind components;
 @tailwind utilities;
 
+/*utilities*/
+.cwc-transition {
+    @apply transition-all duration-300 ease-out;
+}
+
+.cwc-scale {
+    @apply transform scale-105;
+}
+.cwc-scale:hover {
+    @apply scale-100;
+}
+.cwc-scale-up {
+    @apply transform;
+}
+.cwc-scale-up:hover {
+    @apply scale-125;
+}
+
 .cwc-full {
     @apply w-full h-full;
 }
@@ -16,12 +34,20 @@ h5,
 h6 {
     @apply font-extra-condensed font-bold;
 }
+
 a {
     @apply font-extra-condensed tracking-wider;
+    @apply cwc-transition;
+}
+a:hover {
+    @apply text-red-600;
 }
 /*Components*/
 .btn {
-    @apply uppercase text-xs px-4 py-2 rounded-full border;
+    @apply uppercase text-xs px-4 py-2 rounded-full border bg-100-200 bg-no-repeat cwc-transition;
+}
+.btn:hover {
+    @apply bg-bottom;
 }
 @screen sm {
     .btn {
