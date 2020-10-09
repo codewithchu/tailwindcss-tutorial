@@ -21568,12 +21568,36 @@ a:hover {
     padding-bottom: 0;
   }
 
+  #mainMenu li a:hover {
+    --text-opacity: 1;
+    color: #feb2b2;
+    color: rgba(254, 178, 178, var(--text-opacity));
+  }
+
   #mainMenu li {
     margin-right: 1rem;
   }
 
   #mainMenu li:last-child {
     margin-right: 0;
+  }
+
+  .stickyNav {
+    --bg-opacity: 1 !important;
+    background-color: #000 !important;
+    background-color: rgba(0, 0, 0, var(--bg-opacity)) !important;
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+  }
+
+  .stickyNav logo {
+    height: 1.5rem !important;
+  }
+
+  .stickyNav #mainMenu li a:hover {
+    --text-opacity: 1;
+    color: #e53e3e;
+    color: rgba(229, 62, 62, var(--text-opacity));
   }
 }
 

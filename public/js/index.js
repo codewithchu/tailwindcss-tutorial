@@ -15,6 +15,20 @@ function toggleBurger() {
     });
 }
 
+window.addEventListener('scroll', (e) => {
+    if (window.scrollY >= 400) {
+        nav.classList.add('stickyNav');
+
+        back2Top.classList.remove('hidden');
+        back2Top.classList.add('block');
+    } else {
+        nav.classList.remove('stickyNav');
+
+        back2Top.classList.remove('block');
+        back2Top.classList.add('hidden');
+    }
+});
+
 mobileMenu.addEventListener('click', (e) => {
     e.preventDefault();
 

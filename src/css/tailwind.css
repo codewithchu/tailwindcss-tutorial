@@ -72,11 +72,24 @@ a:hover {
     #mainMenu li a {
         @apply py-0;
     }
+    #mainMenu li a:hover {
+        @apply text-red-300;
+    }
     #mainMenu li {
         @apply mr-4;
     }
     #mainMenu li:last-child {
         @apply mr-0;
+    }
+
+    .stickyNav {
+        @apply bg-black py-3 !important;
+    }
+    .stickyNav logo {
+        @apply h-6 !important;
+    }
+    .stickyNav #mainMenu li a:hover {
+        @apply text-red-600;
     }
 }
 /*footer*/
