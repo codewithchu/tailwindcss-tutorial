@@ -1,6 +1,8 @@
 # Tailwindcss Tutorial Series
 
-Source files for tailwindcss Tutorial Series on [CodeWithChu](https://www.youtube.com/channel/UCSyosm-WcUPT4LnUIIdqSCw 'Subscribe to CodeWithChu Youtube Channel') YouTube Channel.
+Source files for Tailwindcss Tutorial Series on [CodeWithChu](https://www.youtube.com/channel/UCSyosm-WcUPT4LnUIIdqSCw 'Subscribe to CodeWithChu Youtube Channel') YouTube Channel.
+
+Each branch are source files for the inidvidual videos.
 
 ## @codewithchu
 
