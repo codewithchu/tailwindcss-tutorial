@@ -21,15 +21,44 @@ a {
 }
 /*Components*/
 .btn {
-    @apply uppercase text-sm px-4 py-2 rounded-full border;
+    @apply uppercase text-xs px-4 py-2 rounded-full border;
 }
-
+@screen sm {
+    .btn {
+        @apply text-sm px-10 py-3;
+    }
+}
+@screen md {
+    .btn {
+        @apply px-16;
+    }
+}
+@screen lg {
+    .btn {
+        @apply px-10;
+    }
+}
 /*Header Nav*/
 #mainMenu li a {
-    @apply py-4 mr-4;
+    @apply py-4;
 }
-
+@screen md {
+    #mainMenu li a {
+        @apply py-0;
+    }
+    #mainMenu li {
+        @apply mr-4;
+    }
+    #mainMenu li:last-child {
+        @apply mr-0;
+    }
+}
 /*footer*/
 footer ul li h4 {
     @apply text-2xl mb-2 leading-none;
+}
+@screen lg {
+    footer ul li h4 {
+        @apply text-lg;
+    }
 }

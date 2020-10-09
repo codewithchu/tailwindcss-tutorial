@@ -21450,7 +21450,7 @@ a {
 
 .btn {
   text-transform: uppercase;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;
@@ -21459,12 +21459,50 @@ a {
   border-width: 1px;
 }
 
+@media (min-width: 640px) {
+  .btn {
+    font-size: 0.875rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .btn {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
 /*Header Nav*/
 
 #mainMenu li a {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  margin-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  #mainMenu li a {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  #mainMenu li {
+    margin-right: 1rem;
+  }
+
+  #mainMenu li:last-child {
+    margin-right: 0;
+  }
 }
 
 /*footer*/
@@ -21473,6 +21511,12 @@ footer ul li h4 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
   line-height: 1;
+}
+
+@media (min-width: 1024px) {
+  footer ul li h4 {
+    font-size: 1.125rem;
+  }
 }
 
 @media (min-width: 640px){

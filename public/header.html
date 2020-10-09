@@ -6,9 +6,12 @@
         <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
         <title>Boom</title>
     </head>
-    <body>
-        <header class="bg-black text-white w-full">
-            <nav id="mainNav" class="px-8 py-2 flex flex-wrap justify-between items-center">
+    <body class="bg-gray-500">
+        <header class="w-full fixed z-30">
+            <nav
+                id="mainNav"
+                class="bg-black md:bg-transparent text-white px-8 xl:px-24 py-2 md:py-6 flex flex-wrap md:flex-no-wrap justify-between items-center"
+            >
                 <div class="flex justify-between items-center w-full">
                     <h1>
                         <a href="#">
@@ -25,7 +28,7 @@
                             </svg>
                         </a>
                     </h1>
-                    <a href="#" class="">
+                    <a href="#" class="md:hidden">
                         <span class="hidden">mobile menu</span>
                         <svg class="h-8" xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24">
                             <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
@@ -38,7 +41,7 @@
                         </svg>
                     </a>
                 </div>
-                <ul id="mainMenu" class="hidden uppercase py-6 text-2xl">
+                <ul id="mainMenu" class="hidden uppercase py-6 text-2xl md:text-base md:py-0 md:flex">
                     <li><a href="#">Headphone</a></li>
                     <li><a href="#">Pods</a></li>
                     <li><a href="#">Support</a></li>

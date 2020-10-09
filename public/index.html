@@ -7,8 +7,11 @@
         <title>Boom</title>
     </head>
     <body>
-        <header class="bg-black text-white w-full">
-            <nav id="mainNav" class="px-8 py-2 flex flex-wrap justify-between items-center">
+        <header class="w-full fixed z-30">
+            <nav
+                id="mainNav"
+                class="bg-black md:bg-transparent text-white px-8 xl:px-24 py-2 md:py-6 flex flex-wrap md:flex-no-wrap justify-between items-center"
+            >
                 <div class="flex justify-between items-center w-full">
                     <h1>
                         <a href="#">
@@ -25,7 +28,7 @@
                             </svg>
                         </a>
                     </h1>
-                    <a href="#" class="">
+                    <a href="#" class="md:hidden">
                         <span class="hidden">mobile menu</span>
                         <svg class="h-8" xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24">
                             <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
@@ -38,7 +41,7 @@
                         </svg>
                     </a>
                 </div>
-                <ul id="mainMenu" class="hidden uppercase py-6 text-2xl">
+                <ul id="mainMenu" class="hidden uppercase py-6 text-2xl md:text-base md:py-0 md:flex">
                     <li><a href="#">Headphone</a></li>
                     <li><a href="#">Pods</a></li>
                     <li><a href="#">Support</a></li>
@@ -47,15 +50,15 @@
         </header>
         <main>
             <!--Landing page Full Product Hero-->
-            <section class="relative h-screen-2/3 flex flex-col justify-end">
+            <section class="relative h-screen-2/3 lg:h-screen flex flex-col justify-end lg:flex-row lg:items-center">
                 <!--Hero Image-->
                 <div class="cwc-full absolute">
                     <span class="cwc-full absolute bg-black bg-opacity-25 bg-gradient-to-b from-transparent via-transparent to-black"></span>
                     <img class="cwc-full object-cover" src="./img/boom-hero.jpg" alt="headphone hero" />
                 </div>
                 <!--Hero Copy-->
-                <div class="relative text-white p-12">
-                    <h2 class="text-3xl">Headphone</h2>
+                <div class="relative text-white p-12 lg:w-1/2 lg:p-20">
+                    <h2 class="text-3xl md:text-5xl lg:text-6xl">Headphone</h2>
                     <p class="mb-10">Introducting the newest addition to the Boom Pro line-up</p>
                     <div>
                         <a class="btn bg-white text-black border-white mr-2" href="#">Learn More</a>
@@ -64,55 +67,67 @@
                 </div>
             </section>
 
-            <section class="bg-gray-200 pb-6">
+            <section class="bg-gray-200 pb-6 md:p-12 lg:p-0">
                 <!--card-->
-                <div class="pb-6 grid">
+                <div class="pb-6 md:pb-12 lg:pb-0 grid lg:grid-cols-2">
                     <!--card Image-->
-                    <div class="grid grid-cols-4 py-10 bg-boom-100">
+                    <div class="grid grid-cols-4 lg:grid-cols-2 py-10 bg-boom-100 lg:h-full lg:min-h-screen-2/3 xl:min-h-screen">
                         <img src="./img/boom-headphone-pro-black.jpg" alt="headphone black" />
                         <img src="./img/boom-headphone-pro-blue.jpg" alt="headphone blue" />
                         <img src="./img/boom-headphone-pro-red.jpg" alt="headphone red" />
                         <img src="./img/boom-headphone-pro-white.jpg" alt="headphone white" />
                     </div>
                     <!--card Copy-->
-                    <div class="bg-white p-12 mx-4 -mt-5 relative rounded">
-                        <h2 class="text-lg text-red-600 uppercase">Headphone Pro</h2>
-                        <h3 class="text-2xl leading-none mb-2">Music to your ears</h3>
-                        <p class="mb-10">Listen in style! Your everyday headphone in many assorted colours.</p>
-                        <div class="flex justify-center">
-                            <a class="btn bg-white text-black border-gray-200 mr-2" href="#">Learn More</a>
-                            <a class="btn bg-red-600 text-white border-red-600" href="#">Shop Now</a>
+                    <div
+                        class="bg-white p-12 lg:p-20 mx-4 -mt-5 relative rounded lg:mx-0 lg:mt-0 lg:rounded-none lg:flex lg:justify-center lg:items-center"
+                    >
+                        <div class="xl:w-9/12">
+                            <h2 class="text-lg lg:text-xl xl:text-2xl text-red-600 uppercase">Headphone Pro</h2>
+                            <h3 class="text-2xl lg:text-4xl xl:text-6xl leading-none mb-2">Music to your ears</h3>
+                            <p class="mb-10">Listen in style! Your everyday headphone in many assorted colours.</p>
+                            <div class="flex justify-center lg:justify-start">
+                                <a class="btn bg-white text-black border-gray-200 mr-2" href="#">Learn More</a>
+                                <a class="btn bg-red-600 text-white border-red-600" href="#">Shop Now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!--card-->
-                <div class="grid">
+                <div class="grid lg:grid-cols-2">
                     <!--card Image-->
-                    <div>
-                        <img src="./img/boom-wireless-pro.jpg" alt="Pods pro" />
+                    <div class="lg:order-last">
+                        <img
+                            class="w-full h-auto lg:h-full lg:min-h-screen-2/3 xl:min-h-screen object-cover"
+                            src="./img/boom-wireless-pro.jpg"
+                            alt="Pods pro"
+                        />
                     </div>
                     <!--card Copy-->
-                    <div class="bg-white p-12 mx-4 -mt-5 relative rounded">
-                        <h2 class="text-lg text-red-600 uppercase">Pods Pro</h2>
-                        <h3 class="text-2xl leading-none mb-2">BOOM comes in small package</h3>
-                        <p class="mb-10">Go anywhere and everywhere with your Pods. Listen all day long without worry.</p>
-                        <div class="flex justify-center">
-                            <a class="btn bg-white text-black border-gray-200 mr-2" href="#">Learn More</a>
-                            <a class="btn bg-red-600 text-white border-red-600" href="#">Shop Now</a>
+                    <div
+                        class="bg-white p-12 lg:p-20 mx-4 -mt-5 relative rounded lg:mx-0 lg:mt-0 lg:rounded-none lg:flex lg:justify-center lg:items-center"
+                    >
+                        <div class="xl:w-9/12">
+                            <h2 class="text-lg lg:text-xl xl:text-2xl text-red-600 uppercase">Pods Pro</h2>
+                            <h3 class="text-2xl lg:text-4xl xl:text-6xl leading-none mb-2">BOOM comes in small package</h3>
+                            <p class="mb-10">Go anywhere and everywhere with your Pods. Listen all day long without worry.</p>
+                            <div class="flex justify-center lg:justify-start">
+                                <a class="btn bg-white text-black border-gray-200 mr-2" href="#">Learn More</a>
+                                <a class="btn bg-red-600 text-white border-red-600" href="#">Shop Now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-        <footer class="bg-black text-gray-400 text-center p-12">
-            <div class="container mx-auto">
-                <div class="grid grid-cols-2 gap-4 mb-12">
-                    <ul class="col-span-2 justify-self-center">
+        <footer class="bg-black text-gray-400 p-12">
+            <div class="container mx-auto text-center">
+                <div class="grid grid-cols-2 lg:grid-cols-6 gap-4 mb-12 lg:text-left lg:text-sm">
+                    <ul class="col-span-2 lg:col-span-1 justify-self-center lg:justify-self-start">
                         <li>
                             <h4>
                                 <span class="hidden"> Boom </span>
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1" class="h-12" viewBox="0 0 60 25">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1" class="h-12 lg:h-8" viewBox="0 0 60 25">
                                     <g fill="currentColor">
                                         <path
                                             d="M29.18 7.5c-2.76 0-4.99 2.1-4.99 5s2.22 5 4.99 5 5-2.1 5-5-2.24-5-5-5zm0 7.72c-1.55 0-2.58-1.11-2.58-2.72 0-1.62 1.03-2.72 2.58-2.72 1.57 0 2.6 1.1 2.6 2.72 0 1.61-1.03 2.72-2.6 2.72zM40.94 7.5c-2.76 0-4.99 2.1-4.99 5s2.22 5 4.99 5 5-2.1 5-5-2.24-5-5-5zm0 7.72c-1.55 0-2.58-1.11-2.58-2.72 0-1.62 1.03-2.72 2.58-2.72 1.57 0 2.6 1.1 2.6 2.72-.01 1.61-1.04 2.72-2.6 2.72zM55.33 7.69l-1.8 2.91c-.7 1.14-.81 1.39-.82 1.39h-.01c-.01 0-.12-.25-.82-1.39l-1.8-2.91H47.9v9.62h2.27v-2.35c0-2.28-.08-3.41-.07-3.41h.01c.01 0 .78 1.32.87 1.46l1.12 1.92h1.2l1.13-1.92c.08-.14.85-1.46.86-1.46h.01c.01 0-.07 1.13-.07 3.41v2.35h2.27V7.69h-2.17zM14.68 12.36c0-1.29-.57-1.39-1.39-1.39-.77 0-1.92.82-2.78 1.75v4.34c4.03-2.9 4.17-4.5 4.17-4.7zM2.5 12.5a10 10 0 005.23 8.79V3.71C4.61 5.4 2.5 8.71 2.5 12.5z"
@@ -153,11 +168,11 @@
                         <li><a href="#">Email</a></li>
                         <li><a href="#">Phone</a></li>
                     </ul>
-                    <ul class="col-span-2 justify-self-center">
+                    <ul class="col-span-2 lg:col-span-1 justify-self-center lg:justify-self-start">
                         <li>
                             <h4>Follow Us</h4>
                         </li>
-                        <li class="grid grid-cols-3 gap-20">
+                        <li class="grid grid-cols-3 gap-20 lg:gap-2">
                             <a href="#" target="_blank" title="follow"
                                 ><span class="hidden">facebook</span>
                                 <svg version="1" class="h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
