@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "build-tw": "tailwindcss build ./src/css/tailwind.css -o ./public/css/tailwind.css",
-        "watch-tw": "onchange 'tailwind.config.js' './src/css/tailwind.css' -- npm run build-tw "
+        "watch-tw": "onchange 'tailwind.config.js' './src/css/tailwind.css' -- npm run build-tw"
     },
     "keywords": [],
     "author": "",
