@@ -23,6 +23,12 @@ Watch Tailwindcss Script
 npm run watch-tw
 ```
 
+PostCss Tailwindcss Script(Minify and Purge Css)
+
+```
+npm run prod-tw
+```
+
 ## @codewithchu
 
 [YouTube](https://www.youtube.com/channel/UCSyosm-WcUPT4LnUIIdqSCw 'CodeWithChu Youtube Channel')
