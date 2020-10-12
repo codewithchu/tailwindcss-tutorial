@@ -3,6 +3,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
     // Paht and File Extentions
     content: [
         './public/**/*.html',
+        './public/**/*.js',
         //'./public/**/*.vue',
         //'./public/**/*.jsx',
         // etc.
