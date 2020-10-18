@@ -6,8 +6,8 @@ Each branch are source files for the inidvidual videos.
 
 # Demo Site
 
-Perview of the website that we will be building in this Tailwind Tutorial Series.
-<a href="http://tailwindcss.arthurchu.ca" title="Demo site for codewithchu Tailwindcss Web Development Tutorials Series" target="_blank">view Demo Site</a>
+Preview of the website that we will be building in this Tailwind Tutorial Series.
+<a href="http://tailwindcss.arthurchu.ca" title="Demo site for codewithchu Tailwindcss Web Development Tutorials Series" target="_blank">Wiew Demo Site</a>
 
 ## @codewithchu
 
