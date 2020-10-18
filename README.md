@@ -2,12 +2,12 @@
 
 Source files for Tailwindcss Tutorial Series on <a href="https://www.youtube.com/channel/UCSyosm-WcUPT4LnUIIdqSCw" title="Subscribe to CodeWithChu Youtube Channel" target="_blank">CodeWithChu</a> YouTube Channel.
 
+Each branch are source files for the inidvidual videos.
+
 # Demo Site
 
 Perview of the website that we will be building in this Tailwind Tutorial Series.
-[view Demo Site](http://tailwindcss.arthurchu.ca 'Demo site for codewithchu Tailwindcss Web Development Tutorials Series')
-
-Each branch are source files for the inidvidual videos.
+<a href="http://tailwindcss.arthurchu.ca" title="Demo site for codewithchu Tailwindcss Web Development Tutorials Series" target="_blank">view Demo Site</a>
 
 ## @codewithchu
 
