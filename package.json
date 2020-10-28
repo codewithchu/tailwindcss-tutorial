@@ -6,7 +6,7 @@
   "scripts": {
     "build-tw": "tailwindcss build ./src/css/tailwind.css -o ./public/css/tailwind.css",
     "prod-tw": "NODE_ENV=production tailwindcss build ./src/css/tailwind.css -o ./public/css/tailwind.css",
-    "prod-pcss": "postcss build ./src/css/tailwind.css -o ./public/css/tailwind.css",
+    "postcss-tw": "postcss build ./src/css/tailwind.css -o ./public/css/tailwind.css",
     "watch-tw": "onchange 'tailwind.config.js' './src/css/tailwind.css' -- npm run build-tw"
   },
   "keywords": [],
