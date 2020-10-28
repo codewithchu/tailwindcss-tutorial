@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,24 +6,24 @@
 
 /*utilities*/
 .cwc-transition {
-    @apply transition-all duration-300 ease-out;
+  @apply transition-all duration-300 ease-out;
 }
 
 .cwc-scale {
-    @apply transform scale-105;
+  @apply transform scale-105;
 }
 .cwc-scale:hover {
-    @apply scale-100;
+  @apply scale-100;
 }
 .cwc-scale-up {
-    @apply transform;
+  @apply transform;
 }
 .cwc-scale-up:hover {
-    @apply scale-125;
+  @apply scale-125;
 }
 
 .cwc-full {
-    @apply w-full h-full;
+  @apply w-full h-full;
 }
 
 h1,
@@ -32,72 +32,72 @@ h3,
 h4,
 h5,
 h6 {
-    @apply font-extra-condensed font-bold;
+  @apply font-extra-condensed font-bold;
 }
 
 a {
-    @apply font-extra-condensed tracking-wider;
-    @apply cwc-transition;
+  @apply font-extra-condensed tracking-wider;
+  @apply cwc-transition;
 }
 a:hover {
-    @apply text-red-600;
+  @apply text-red-600;
 }
 /*Components*/
 .btn {
-    @apply uppercase text-xs px-4 py-2 rounded-full border bg-100-200 bg-no-repeat cwc-transition;
+  @apply uppercase text-xs px-4 py-2 rounded-full border bg-100-200 bg-no-repeat cwc-transition;
 }
 .btn:hover {
-    @apply bg-bottom;
+  @apply bg-bottom;
 }
 @screen sm {
-    .btn {
-        @apply text-sm px-10 py-3;
-    }
+  .btn {
+    @apply text-sm px-10 py-3;
+  }
 }
 @screen md {
-    .btn {
-        @apply px-16;
-    }
+  .btn {
+    @apply px-16;
+  }
 }
 @screen lg {
-    .btn {
-        @apply px-10;
-    }
+  .btn {
+    @apply px-10;
+  }
 }
 /*Header Nav*/
 #mainMenu li a {
-    @apply py-4;
+  @apply py-4;
 }
 @screen md {
-    #mainMenu li a {
-        @apply py-0;
-    }
-    #mainMenu li a:hover {
-        @apply text-red-300;
-    }
-    #mainMenu li {
-        @apply mr-4;
-    }
-    #mainMenu li:last-child {
-        @apply mr-0;
-    }
+  #mainMenu li a {
+    @apply py-0;
+  }
+  #mainMenu li a:hover {
+    @apply text-red-300;
+  }
+  #mainMenu li {
+    @apply mr-4;
+  }
+  #mainMenu li:last-child {
+    @apply mr-0;
+  }
 
-    .stickyNav {
-        @apply bg-black py-3 !important;
-    }
-    .stickyNav logo {
-        @apply h-6 !important;
-    }
-    .stickyNav #mainMenu li a:hover {
-        @apply text-red-600;
-    }
+  .stickyNav {
+    @apply bg-black py-3 !important;
+  }
+  .stickyNav #logo svg {
+    @apply h-6 !important;
+  }
+  .stickyNav #mainMenu li a:hover {
+    @apply text-red-600;
+  }
 }
 /*footer*/
 footer ul li h4 {
-    @apply text-2xl mb-2 leading-none;
+  @apply text-2xl mb-2 leading-none;
 }
 @screen lg {
-    footer ul li h4 {
-        @apply text-lg;
-    }
+  footer ul li h4 {
+    @apply text-lg;
+  }
 }
