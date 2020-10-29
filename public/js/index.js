@@ -3,9 +3,38 @@ const mobileMenu = document.querySelector("#mobileMenu");
 const mobileMenuIcons = mobileMenu.querySelectorAll("svg");
 const mainMenu = document.querySelector("#mainMenu");
 const back2Top = document.querySelector("#back2Top");
+const htmlEl = document.querySelector("html");
+htmlEl.style.scrollBehavior = "smooth";
 
 //functions
-function toggleBurger() {
+const easing = (t) => {
+  //easeInOutCubic
+  return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+};
+
+const smoothScroll = (target, duration) => {
+  const ssTarget = document.querySelector(target);
+  const ssStart = window.pageYOffset;
+  const ssTargetTop = ssTarget.getBoundingClientRect().top;
+  let startTime = 0;
+
+  const ssAni = (now) => {
+    if (startTime === 0) startTime = now;
+
+    let elapsedTime = now - startTime;
+    let ease = easing(Math.min(elapsedTime / duration, 1));
+
+    window.scroll(0, ssStart + ssTargetTop * ease);
+    console.log(elapsedTime / duration, " ease:", ease);
+    if (elapsedTime < duration) {
+      requestAnimationFrame(ssAni);
+    }
+  };
+
+  requestAnimationFrame(ssAni);
+};
+
+const toggleBurger = () => {
   mobileMenuIcons.forEach((mmi) => {
     if (mmi.classList.contains("hidden")) {
       mmi.classList.remove("hidden");
@@ -13,10 +42,10 @@ function toggleBurger() {
       mmi.classList.add("hidden");
     }
   });
-}
+};
 
 //debounce toggleStickyNav function
-let toggleStickyNav = debounce(function () {
+const toggleStickyNav = debounce(function () {
   if (window.scrollY >= 400) {
     nav.classList.add("stickyNav");
 
@@ -29,8 +58,8 @@ let toggleStickyNav = debounce(function () {
     back2Top.classList.add("hidden");
   }
 }, 250);
-window.addEventListener("scroll", toggleStickyNav);
 
+window.addEventListener("scroll", toggleStickyNav);
 mobileMenu.addEventListener("click", (e) => {
   e.preventDefault();
 
@@ -45,7 +74,11 @@ mobileMenu.addEventListener("click", (e) => {
 
 back2Top.addEventListener("click", (e) => {
   e.preventDefault();
-  window.scroll({ top: 0, left: 0, behavior: "smooth" });
+  if (getComputedStyle(htmlEl).scrollBehavior === "smooth") {
+    window.scroll({ top: 0, left: 0, behavior: "smooth" });
+  } else {
+    smoothScroll("html", 1000);
+  }
 });
 
 //debounce
